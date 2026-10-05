@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Libre";
+  src: url("../assets/fonts/LibreCaslonCondensed-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Libre", Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+header img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #222;
+}
+
+header a:hover {
+  color: #007bff;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+article {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+footer {
+  background: #222;
+  color: white;
+  padding: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
