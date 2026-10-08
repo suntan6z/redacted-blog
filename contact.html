@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apple dévoile l'iPhone Duo : écran de 7,6 pouces, puce A20 Pro, 2 339 €.">
-    <title>iPhone Duo, le premier iPhone pliable – redacted.blog</title>
+    <meta name="description" content="Contacter l'auteur de redacted.blog.">
+    <title>Contact – redacted.blog</title>
     <link rel="icon" href="assets/favicon.ico" sizes="32x32">
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -39,32 +39,52 @@
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="guide.html">Guide</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="contenu">
-        <article class="article-page">
-            <h1>iPhone Duo : Apple dévoile son premier iPhone pliable</h1>
-            <p class="date">Publié le <time datetime="2026-10-05">5 octobre 2026</time> par Lorenzo</p>
-            <img src="img/4.iphone.jpg" alt="L'iPhone Duo, premier iPhone pliable d'Apple" width="660" height="528">
+        <section class="article-page">
+            <h1>Contact</h1>
+            <p>Une question, une suggestion d'article ou une erreur à signaler ? Écrivez-moi à <a href="mailto:lorenzo.loconsole.auditeur@lecnam.net">lorenzo.loconsole.auditeur@lecnam.net</a> ou utilisez le formulaire ci-dessous.</p>
 
-            <p>Après des années de rumeurs, Apple se lance à son tour sur le marché des smartphones pliables avec l'iPhone Duo. Fermé, il ressemble à un iPhone classique ; ouvert, il se transforme en petite tablette.</p>
+            <form class="contact-form" action="mailto:lorenzo.loconsole.auditeur@lecnam.net" method="post" enctype="text/plain">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" autocomplete="name" required>
 
-            <h2>Les points clés</h2>
-            <ul>
-                <li><strong>Écran :</strong> une dalle pliable de 7,6 pouces une fois déplié.</li>
-                <li><strong>Puce :</strong> l'A20 Pro, la plus puissante de la gamme.</li>
-                <li><strong>Prix :</strong> 2 339 € en France.</li>
-                <li><strong>Sortie :</strong> le <time datetime="2026-10-23">23 octobre</time>.</li>
-            </ul>
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
 
-            <h2>Faut-il craquer ?</h2>
-            <p>Comme pour toute première génération, la prudence reste de mise : solidité de la charnière, pli visible de l'écran et coût de réparation seront à surveiller dans les premiers tests. À ce prix, l'iPhone Duo s'adresse surtout aux passionnés prêts à essuyer les plâtres.</p>
+                <fieldset>
+                    <legend>Votre message concerne :</legend>
+                    <div class="choix">
+                        <input type="checkbox" id="sujet-article" name="sujet" value="article">
+                        <label for="sujet-article">Un article</label>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" id="sujet-guide" name="sujet" value="guide">
+                        <label for="sujet-guide">Le guide</label>
+                    </div>
+                    <div class="choix">
+                        <input type="checkbox" id="sujet-erreur" name="sujet" value="erreur">
+                        <label for="sujet-erreur">Une erreur à signaler</label>
+                    </div>
+                </fieldset>
 
-            <a class="read-more" href="index.html#articles">&larr; Retour aux articles</a>
-        </article>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <div class="choix">
+                    <input type="checkbox" id="consentement" name="consentement" required>
+                    <label for="consentement">J'accepte que mon adresse e-mail soit utilisée uniquement pour me répondre.</label>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+
+            <a class="read-more" href="index.html">&larr; Retour à l'accueil</a>
+        </section>
     </main>
 
     <footer>
